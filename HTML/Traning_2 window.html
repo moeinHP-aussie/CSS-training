@@ -1,0 +1,972 @@
+<DOCTYPE HTML>
+<html>
+  <head>
+    <title>HTML review(part 2)</title>
+    <link rel="stylesheet" href="CSS for traning_2.css">
+  </head>
+<body>
+    <br id="start">
+    <h1 id="1">HTML Links</h1>
+    <div class="custom-line"></div>
+    <h2>The target Attribute: </h2>
+    <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+    <p>The target attribute specifies where to open the linked document.</p>
+    <p class='bold'>The target attribute can have one of the following values:</p>
+    <p><b>_self</b> - Default. Opens the document in the same window/tab as it was clicked</p>
+    <p><b>_blank</b> - Opens the document in a new window or tab</p>
+    <p><b>_parent</b> - Opens the document in the parent frame</p>
+    <p><b>_top</b> - Opens the document in the full body of the window</p>
+    <p>An blank target example: <a href="https://www.w3schools.com/css" target="_blank">Click to visit W3Schools CSS Tutorial!</a></p>
+    <h2>Absolute URLs vs. Relative URLs:</h2>
+    <p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part).</p>
+    <p>-Absolute URLs:  href="https://www.google.com/">Google<</p>
+    <p>-Relative URLs:  href="html_images<mark>.asp</mark>">HTML Images<</p>
+    <h2>Use an Image as a Link:</h2>
+    <p>To use an image as a link, just put the <mark>img</mark> tag inside the <mark>a</mark> tag. For example:</p>
+    <P>- Click on below pictures to read more about theese famouse painting:</P>
+    <a href="https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring" target="_blank">
+    <img src="1665_Girl_with_a_Pearl_Earring.jpg" alt="Girl with a Pearl Earring" style="max-width: 35%;height:auto; margin-left: 5%;">
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Mona_Lisa" target="_blank">
+    <img src="Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" alt="Mona Lisa" style="max-width: 30%;height: auto;">
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Nighthawks_(Hopper)" target="_blank">
+      <img src="Nighthawks_by_Edward_Hopper_1942.jpg" alt="Nighthawks" style="max-width: 66%;height: auto; margin-left: 5%;">
+      </a>
+    <h2>Link to an Email Address:</h2>
+    <p>Use <mark>mailto:</mark> inside the <mark>href</mark> attribute to create a link that opens the user's email program (to let them send a new email)</p>
+    <h2>Button as a Link & Link Titles:</h2>
+    <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+    <p><b>JavaScript</b> allows you to specify what happens at certain events, such as a click of a button:</p>
+    <button onclick="document.location='https://www.w3schools.com/js/'" style="margin-left: 27px;" title="Go to W3Schools JavaScript section" >JavaScript Tutorial</button>
+    <h2>Colors & Link Buttons</h2>
+    <p class="bold">By default, a link will appear like this (in all browsers):</p>
+    <p>An unvisited link is underlined and blue<br>A visited link is underlined and purple<br>An active link is underlined and red</p>
+    <p><a href="https://www.w3schools.com/css" target="_blank">W3Schools CSS Tutorial!</a></p>
+    <p>A link can also be styled as a button, by using CSS:</p>
+    <a class="button" href="CSS for traning_2.css" target="_blank" style="margin-left: 50px;">The page CSS codes link</a>
+    <h2>Create Bookmarks:</h2>
+    <p>Bookmarks can be useful if a web page is very long.<br>To create a bookmark: First, use the <mark>id</mark> attribute to create a bookmark in goal section you wanna jump there.<br>Then, add a link to the bookmark, from within the same page:</p>
+    <p><a href="#start">Jump to top</a></p>
+    <p>Also can add a link to a bookmark on another page:</p>
+    <p><a href="traning_1.htm#HTML colors">Jump to HTML colors section in 'traning part 1'</a></p>
+    <br>
+    <h1 id="2">HTML Images</h1><div class="custom-line"></div>
+    <h2>Images on Another Server/Website & Animated Images</h2>
+    <p>To point to an image on another server, you must specify an absolute (full) URL in the <mark>src</mark> attribute.</p>
+    <p>HTML allows animated GIFs:</p>
+    <img src="Fourier_series_square_wave_circles_animation.svg" alt="Fourier series" style="width:400px;height:200px; margin-left: 6cm;">
+    <h2>Image Floating:</h2>
+    <p>Use the CSS <mark>float</mark> property to let the image float to the right or to the left of a text (Or anywhere!):</p>
+    <p style="text-align: right;">
+    <img src="weather.gif" alt="weather" style="float:right;width:50px;height:50px; margin-right: 30%;">
+       A paragraph with a floating image in right</p>
+      <p>
+        <img src="weather.gif" alt="weather" style="float:left;width:50px;height:50px;">
+           A paragraph with a floating image in left.</p>
+    <br>
+    <h2>Image Maps:</h2>
+    <p>The HTML <mark>map</mark> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <mark> tags.</p>
+    <p>The image is inserted using the img tag. The only difference from other images is that you must add a <mark>usemap</mark> attribute:</p>
+    <p>-- img src="workplace.jpg" alt="Workplace" usemap="#workmap" --</p>
+    <p>  The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.</p>
+    <a class="button" href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank" style="margin-left: 50px;">To review the next steps and study more closely:</a>
+    <p><b>A clickable area can also trigger a JavaScript function.</b></p>
+    <p>Add a click event to the &lt;area> element to execute a JavaScript function:</p>
+    <p class="bold">- Example:</p>
+    <p style="margin-left: 5cm;"><q><italic>The most famouse neil leifer's photoshoot</q> : </italic> </p>
+    <!-- IMAGE MAP CODES: (also use javascript) {START} -->
+    <img src="muhammadali.jpg" alt="Muhammad Ali vs. Sonny Liston" usemap="#boxing" style="border-radius: 1%; margin-left: 10% ;max-width: 96%;height: auto;" title="click on persons";>
+    <map name="boxing" >
+      <area shape="rect" coords="200,130,360,470" alt="MohammadAli" href="https://en.wikipedia.org/wiki/Muhammad_Ali"
+       target="_blank" onclick="myFunction1()">
+      <area shape="rect" coords="100,500,500,700" alt="Sonny Liston" href="https://en.wikipedia.org/wiki/Sonny_Liston"
+      target="_blank" onclick="myFunction2()">
+    </map>
+    <script> function myFunction1() {
+      alert( "You clicked on the MuhammadAli Clay!"); }</script>
+    <script> function myFunction2() {
+      alert( "You clicked on the Sonny Liston!"); }</script>
+    <!-- IMAGE MAP CODES (also use javascript) {END} -->
+    <h2>Background Image on a HTML element:</h2>
+    <p style="background-image: url('d2hd73xxwvaa1.jpg'); color: rgb(175, 246, 180); background-repeat: no-repeat;
+     background-attachment:fixed;  background-size: 100% 100%;"><br><br>
+      - To add a background image on an HTML element, use the HTML <mark>style</mark> attribute and the CSS <mark>background-image</mark> property.
+      <br><br>- If you want the entire page to have a background image, you must specify the background image on the body> element.
+      <br><br>- If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element. 
+      <br><br>- To avoid the background image from repeating itself, set the <mark>background-repeat</mark> property to <mark>no-repeat</mark>.
+      <br><br>- If you want the background image to cover the entire element, you can set the <mark>background-size</mark> property to cover.
+      <br>Also, to make sure the entire element is always covered, set the <mark>background-attachment</mark> property to fixed.
+      <br>This way, the background image will cover the entire element, with no stretching. (the image will keep its original proportions)
+      <br><br>- If you want the background image to stretch to fit the entire element, you can set the <mark>background-size</mark> property to 100% 100%:
+      <br>Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.<br><br><br><br><br><br>
+      </p>
+    <h2>Picture Element:</h2>
+    <p>The <mark>picture</mark> element contains one or more <mark>source</mark> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+      <br>Each source> element has a media attribute that defines when the image is the most suitable.</p>
+    <p>Resize the browser to see different versions of the picture loading at different viewport sizes:</p>
+    <picture>
+      <source media="(min-width: 770px)" srcset="112463.jpg">
+      <img src="457279-Movie-WallE-Phone-Wallpaper.jpg" style="width: auto;">
+    </picture>
+    <p class="bold">When to use the Picture Element?</p>
+    <p class="bold">1. Bandwidth</p>
+    <p>If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first source> element with matching attribute values, and ignore any of the following elements.</p>
+    <p class="bold">2. Format Support</p>
+    <p>Some browsers or devices may not support all image formats. By using the picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.</p>
+    <h1 id="3">Favicon</h1>
+    <div class="custom-line"></div>
+    <p>To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".<br>
+    Next, add a <mark>link</mark>> element to your "index.html" file, after the title> element, like this:</p>
+    <p><pre>&lt;head>
+      title> My Page Title /title>
+      &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+      &lt;/head></pre></p>
+     <h1 id="4"> HTML Tables</h1>
+     <div class="custom-line"></div>
+    <p>- Everything between <mark>td</mark> and /td> are the content of the table cell.</p>
+    <p>Each table row starts with a <mark>tr</mark> and ends with a /tr> tag.
+      Sometimes you want your cells to be table header cells. In those cases use the <mark>th</mark> tag instead of the td> tag.</p>
+    <p>By default, the text in `th> elements are bold and centered, but you can change that with CSS.</p>
+    <table class="zebra1" style="width: fit-content; margin-left: 1cm; font-size: large;">
+      <caption><p class="bold" style="font-size: small;"><ins>HTML Table Tags:</ins></p></caption>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>table</td>
+      <td>Defines a table</td>
+    </tr>
+    <tr>            
+      <td>th</td>
+      <td>Defines a header cell in a table</td>
+    </tr>
+    <tr>
+      <td>tr</td>
+      <td>Defines a row in a table</td>
+    </tr>
+    <tr>
+      <td>td</td>
+      <td>Defines a cell in a table</td>
+    </tr>
+    <tr>
+      <td>caption</td>
+      <td>Defines a table caption</td>
+    </tr>
+    <tr>
+      <td>colgroup</td>
+      <td>Specifies a group of one or more columns in a table for formatting</td>
+    </tr>
+    <tr>
+      <td>col</td>
+      <td>	Specifies column properties for each column within a <mark>colgroup</mark> element</td>
+    </tr>
+    <tr>
+      <td>thead</td>
+      <td>Groups the header content in a table</td>
+    </tr>
+    <tr>
+      <td>tbody</td>
+      <td>Groups the body content in a table</td>
+    </tr>
+    <tr>
+      <td>tfoot</td>
+      <td>Groups the footer content in a table</td>
+    </tr>
+    </table>
+    <h2>Table Borders & Size:</h2>
+    <p>To avoid having double borders like in the example above, set the CSS <mark>border-collapse</mark> property to <mark>collapse</mark>.</p>
+    <table class="collapsed" style="background-color: aqua;">
+      <tr>
+        <th>AAA</th>
+        <td>BBB</td>
+      </tr>
+      <tr style="background-color: yellowgreen;">
+        <td style="background-color: azure; border-color: rgb(238, 0, 255);">CCCCC</td>
+        <th>DDDD</th>
+    </tr>
+    <tr>
+      <th>EEE</th>
+      <td>FFFFF</td>
+    </tr>
+    
+    </table><table style="margin-left: 4cm;margin-top: -2cm;">
+      <tr>
+        <th>AAA</th>
+        <td>BBB</td>
+      </tr>
+      <tr style="background-color: yellowgreen;">
+        <td style="background-color: azure; border-color: rgb(0, 30, 255);">CCCCC</td>
+        <th>DDDD</th>
+    </tr>
+    <tr>
+      <th>EEE</th>
+      <td>FFFFF</td>
+    </tr>
+    </table>
+    <br>
+    <p>To set the size of a specific column, add the style attribute on a th or td element:</p>
+    <table style="width: 20%; ;background-color: rgb(136, 255, 184); border: 4px solid rgb(34, 0, 169);
+     border-radius: 15px; border-left-style: dashed;border-right-style: dotted;">
+      <tr>
+        <th>AAAAA</th>
+        <td>BBBBB</td>
+      </tr>
+      <tr>
+        <td>CCCCC</td>
+        <th>DDDDD</th>
+    </tr>
+    <tr>
+      <th style="width: 90%;">EEEEEEEE</th>
+      <td>FFFFFFF</td>
+    </tr>
+    <tr>
+      <td>GGGGG</td>
+    </tr>
+    </table>
+    <p> To set the <mark>height</mark> of a specific row, add the style attribute on a table <mark>row</mark> element:</p>
+    <table class="collapsed" style="width:40%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr style="height:110px">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <br>
+    <h2>Table Headers</h2>
+    <p>- To use the first column as table headers, define the first cell in each row as a th element:</p>
+    <p>To left-align the table headers, use the CSS text-align property</p>
+    <table style="width: 30%; height: 15%;text-align: left;">
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+    <h2>Table Padding & Spacing</h2>
+    <table class="spacing">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    
+    <p>To do Header for Multiple Columns,, use the <mark>colspan</mark> attribute on the th element:</p>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <p>To make a cell span over multiple rows, use the <mark>rowspan</mark> attribute:</p>
+    <table style="border-spacing: 7px; border-style:initial;">
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+    </tr>
+    </table>
+    <br>
+    <h2>HTML Table Styling</h2>
+    <p class="bold">Zebra Stripes</p>
+    <p>For zebra-striped tables, use the <mark>:nth-child()</mark> selector and add a background-color to all even (or odd) table <mark>rows</mark>:</p>
+    <table class="zebra1">
+        <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+        </tr>
+        <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+        </tr>
+        <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+        </tr>
+        <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+        </tr>
+        <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+    </table>
+    <p>To make vertical zebra stripes, style every other column, instead of every other row.</p>
+    <table class="zebra2"  style="width:20%; border-collapse: collapse" >
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </table>
+    <p><b>Note:</b> Put the :nth-child() selector on both th and td elements if you want to have the styling on both headers and regular table cells.</p>
+    <br>
+    <p>You can combine the styling from the two examples above and you will have stripes on every other row and every other column.
+      If you use a transparent color you will get an overlapping effect.</p>
+    <br><h2>Horizontal Dividers & Hoverable Table</h2>
+    <p>If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.</p>
+    <p>Add the <mark>border-bottom(or top)</mark> property to all <mark>tr</mark> elements to get horizontal dividers:</p>
+    <p>Use the :<mark>hover</mark> selector on tr(or th/td) to highlight table rows(or other part) on mouse over</p>
+    <br><h2>HTML Table Colgroup</h2>
+    <p>If you want to style the two first columns of a table, use the <mark>colgroup</mark> and <mark>mark</mark> elements.</p>
+    <p>- The colgroup element should be used as a container for the column specifications.</p>
+    <p>- Each group is specified with a col element.<br>- The span attribute specifies how many columns that get the style.</p>
+    <p>If you want to style columns in the middle of a table, insert a "empty" col element (with no styles) for the columns before.<br>- You can hide columns with the <mark>visibility: collapse</mark> property:</p>
+    <table class="collapsed" style="width: 40%;">
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+        <col span="3">
+        <col span="2" style="background-color: pink;">
+      </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    </tr>
+    </table>
+    <br>
+    <h1 id="5">Lists</h1> <div class="custom-line"></div>
+    <h2>Unordered List:</h2>
+    <p>An unordered list starts with the <mark>ul</mark> tag.<br>The CSS list-style-type property is used to define the style of the list item marker.</p>
+    <ul style=" margin-right: 25cm; list-style-type:decimal;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <h2>A Nested List</h2>
+    <p>Lists can be nested (list inside list):</p>
+    
+    <ul>
+      <li>Coffee</li>
+      <li>Tea
+        <ul>
+          <li>Black tea</li>
+          <li>Green tea</li>
+        </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+    <p class="bold">HTML lists can be styled in many different ways with CSS.One popular way is to style a list horizontally, to create a navigation menu.</b></p>
+    <h2>Ordered List:</h2>
+    <p>An ordered list starts with the <mark>ol</mark> tag.</p>
+    <p>The <mark>type</mark> attribute of the &lt;ol> tag, defines the type of the list item marker:</p>
+    <table class="zebra1">
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>type="1"</td> 
+        <td>numbered with numbers (default)</td>
+      </tr>
+      <tr>
+        <td>type="A"</td> 
+        <td>numbered with uppercase letters</td>
+      </tr>
+      <tr>
+        <td>type="a"</td> 
+        <td>numbered with lowercase letters</td>
+      </tr>
+      <tr>
+        <td>type="I"</td> 
+        <td>numbered with uppercase roman numbers</td>
+      </tr>
+      <tr>
+        <td>type="i"</td> 
+        <td>numbered with lowercase roman numbers</td>
+      </tr>
+    </table>
+    <p class="bold">Control List Counting:</p>
+    <p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the <mark>start</mark> attribute:</p>
+    <ol start="50">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    
+    <ol type="I" start="50">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <p><b>Description List:</b></p>
+    <p>A description list is a list of terms, with a description of each term.  The <mark>dl</mark> tag defines the description list, the <mark>dt</mark> tag defines the term (name), and the <mark>dd</mark> tag describes each term:</p>
+    <dl></dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dd>- ...</dd>
+      <dd>- ...</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+    <br>
+    <h1 id="6">Block and Inline Elements</h1><div class="custom-line"></div>
+    <p>
+      Every HTML element has a default display value, depending on what type of element it is.
+      <br>The two most common display values are block and inline.  
+    </p>
+    <h2>Block-level Elements:</h2>
+    <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+    Two commonly used block elements are: "p" and <mark>"div"</mark>.  
+    <br>The "div" element defines a division or a section in an HTML document.</p>
+    <h2>Inline Elements:</h2>
+    <p>The <span style="border: 1px solid maroon"><mark>span</mark> element is aninline element</span>, and will not start on a new line and only takes up as much width as necessary.</p>
+    <h2>The DIV Element:</h2>
+    <div style="background-color:rgb(69, 1, 1);color:aquamarine;padding:20px;margin-right:5cm  ; overflow: auto;" >
+    The DIV element is often used as a container for other HTML elements.<br>
+    The DIV element has no required attributes, but style, class and id are common.<br>
+    When used together with CSS, the DIV element can be used to style blocks of content.
+    </div>
+    <h2>The "span" Element:</h2>
+    <p>The span element is an inline container used to mark up a part of a text, or a part of a document.
+    The span element has no required attributes, but style, class and id are common.
+    When used together with CSS, the span element can be used to style parts of the text:</p>
+    <p>-My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+    <p class="bold">differences between dev and span:</p>
+    <p>The main differences between div and span in HTML are related to their default display behavior and typical use cases. Here's a summary of the key distinctions:</p>
+    
+    <ol>
+      <li>
+        Display Type:
+        <ul>
+          <li>DIV: It is a block-level element, meaning it starts on a new line and takes up the full width available. By default, it creates a block-level box.</li>
+          <li>SPAN: It is an inline-level element, meaning it does not start on a new line, and it only takes up as much width as necessary. By default, it creates an inline-level box.</li>
+        </ul>
+      </li><br>
+      <li>
+        Typical Use Cases:
+        <ul>
+          <li>DIV: Used for grouping and structuring block-level content. It is commonly used to create sections or containers that can be styled or manipulated<br>as a single unit. It is often used in conjunction with CSS for layout purposes.</li>
+          <li>SPAN: Used for applying styles to small portions of inline content within a block of text. It is commonly used to apply styles, such as changing the <br>color or font, to a specific portion of text without affecting the overall layout.</li>
+        </ul> 
+      </li><br>
+      <li>
+        Usage in CSS:
+        <ul>
+          <li>DIV:  Used for creating larger layout structures and applying styles to block-level elements. It's often styled with CSS properties like width, height, margin, and padding.</li>
+          <li>SPAN:  Used for applying styles to inline elements or small portions of text. It's often styled with CSS properties like color, font-size, and text-decoration.</li>
+        </ul>
+      </li><br>
+    </ol>
+
+    <p>In summary, DIV is typically used for larger structural elements and block-level grouping, while SPAN is used for applying styles to inline content within a block of text. Both are versatile and can be styled using CSS for various purposes.</p>
+    <br>
+    <h1 id="7">Div Element</h1> <div class="custom-line"></div>
+    <p>If you have a &lt;div> element that is not 100% wide, and you want to center-align it, set the CSS margin property to <mark>auto</mark>.</p>
+    <p>-You can have many &lt;div> containers on the same page.</p>
+    <h2>Aligning &lt;div> elements side by side:</h2>
+    <p>There are different methods for aligning elements side by side. We will look at the most common methods:</p>
+    <p><b>- Float:</b></p>
+    <p>The CSS <mark>float</mark> property was not originally meant to align &lt;dive> elements side-by-side, but has been used for this purpose for many years.</p>
+    <p>The CSS float property is used for positioning and formatting content and allow elements float next to each other instead of on top of each other.</p>
+    <div class="mycontainer";>
+      <div style="background-color:#FFF4A3;">
+        <p><b>London</b></p>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+      
+      <div style="background-color:#FFC0C7;">
+        <p><b>Oslo</b></p>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+      </div>
+      
+      <div style="background-color:#D9EEE1;">
+        <p><b>Rome</b></p>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+      </div>
+    </div>
+    <br><br> 
+    <p><b>- Inline-block:</b></p>
+    <p>If you change the div element's display property from block to inline-block, the elements will no longer add a line break<br> before and after, and will be displayed side by side instead of on top of each other.</p>
+    <div class="inline">
+      <div style="background-color:#FFF4A3;">
+        <p><b>London</b></p>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+      
+      <div style="background-color:#FFC0C7;">
+        <p><b>Oslo</b></p>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+      </div>
+      
+      <div style="background-color:#D9EEE1;">
+        <p><b>Rome</b></p>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+      </div>
+    </div>
+    <p><b>- Flex:</b></p>
+    <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning.
+    <br>To make the CSS flex method work, surround the div elements with another div element and give it the status as a flex container:</p>
+    <p><pre>
+      .mycontainer {
+        display: flex;
+      }
+      .mycontainer > div {
+        width:33%;
+      }
+    </pre></p>
+    <p><b>- Grid:</b></p>
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+    <br>Sounds almost the same as flex, but has the ability to define more than one row and position each row individually.</p>
+    <p>The CSS grid method requires that you surround the div elements with another div element and give the status as a grid container, and you must specify the width of each column.</p>
+    <p><pre>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+      }
+    </pre></p>
+    <br>
+    <h1 id="8">class Attribute</h1> <div class="custom-line"></div>
+    <p>The HTML <mark>class</mark> attribute is used to specify a class for an HTML element.Multiple HTML elements can share the same class.<br>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</p>
+    <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {} .</p>
+    <h2>Use of The class Attribute in JavaScript:</h2>
+    <p>The class name can also be used by JavaScript to perform certain tasks for specific elements.</p>
+    <p>JavaScript can access elements with a specific class name with the <mark>getElementsByClassName()</mark> method:</p>
+    <p >
+      <pre style="border: 1px solid maroon; margin-left: 1cm; margin-right: 30%;
+       overflow:auto;">
+    &lt;script>
+      function myFunction3() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+      function myFunction4() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.border = "dotted";
+          x[i].style.display = "block";
+      
+        }
+      }
+      &lt;/script>
+    </pre>
+    </p>
+    <p><b>*The top code's output:</b></p>
+    <p>Click the button to hide all elements with class name "city":</p>
+    
+    <button onclick="myFunction3()">Hide elements</button>
+    <button style="margin-left: -2px;" onclick="myFunction4()">Appear+Draw border</button>
+    
+    
+    <h3 class="city">| London</h3>
+    <p>London is the capital of England.</p>
+    
+    <h3 class="city">|| Paris</h3>
+    <p>Paris is the capital of France.</p>
+    
+    <h3 class="city">||| Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+    
+    <script>
+    function myFunction3() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+    function myFunction4() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.border = "dotted";
+        x[i].style.display = "block";
+    
+      }
+    }
+    </script>
+    <br>
+    
+    
+    <h1 id="9">HTML id</h1> <div class="custom-line"></div>
+    <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.</p>
+    <p>The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.</p>
+    <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.</p>
+    <p><bold>Notes:</bold>The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).</p>
+    <h2>Difference Between Class and ID:</h2>
+    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.</p>
+    
+    <h2>Using The id Attribute in JavaScript:</h2>
+    <p id="myHeader2">JavaScript는 <mark>getElementById()</mark> 메서드를 사용하여 지정된 ID를 가진 요소에 액세스할 수 있습니다:</p>
+    
+    <p><pre>
+      EXAMPLE:
+      &lt;h1 id="myHeader"> Hello World! &lt;/h1>
+       &lt;button onclick="displayResult()">Change text &lt;/button>
+       
+       &lt;script>
+       function displayResult() {
+         document.getElementById("myHeader").innerHTML = "Have a nice day!";
+       }
+       &lt;/script>
+    </pre></p>
+    <p class="bold" id="myHeader">어제는 크리스마스였어.(나는 정직 해!)</p>
+    <button onclick="displayResult()">Translate the Korean section to Enlgish</button>
+    
+    <script>
+    function displayResult() {
+      document.getElementById("myHeader").innerHTML = "Yesterday was christmas(I'm honest!)";
+      document.getElementById("myHeader2").innerHTML = "JavaScript can access an element with a specified id by using the 'getElementById()' method:";
+    }
+    </script>
+    <br>
+
+
+    <h1 id="10">Iframes</h1> <div class="custom-line"></div>
+
+    <p>An HTML iframe is used to display a web page within a web page.</p>
+    <p><pre>&lt; iframe src="url" title="description"> &lt;/iframe>
+    </pre></p>
+    <p>- Example:</p>
+    <iframe src="traning_1.htm" title="my first html expreince" style="border-width: 3px; border-color: maroon; height: 6cm;width: 70%; margin-left: 5%;"> </iframe>
+    <h2>Iframe - Target for a Link:</h2>
+    <p>An iframe can be used as the target frame for a link.<br>The <mark>target</mark> attribute of the link must refer to the <mark>name</mark> attribute of the iframe:</p>
+    <p> <pre>
+     &lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example">&lt;/iframe>
+    
+     &lt;p>&lt;a href="https://www.w3schools.com" target="iframe_a">W3Schools.com&lt;/a>&lt;/p></pre></p>
+    
+  <iframe style="float: none;width: 70%;height: 10cm; border-collapse: collapse;" src="design  cheetsheet window.html" name="cheetsheets" title="Ifram" ></iframe>
+  <br><p style="float: left;"><a href="https://www.w3schools.com/colors/colors_picker.asp" target="cheetsheets">-HTML color picker:</a></p>
+  <br><p style="margin-top: -1px;"><a href="https://www.w3schools.com/w3css" target="cheetsheets">-W3 CSS Tutorial:</a></p>
+<br>
+
+
+<h1 id="11">JavaScript</h1> <div class="custom-line"></div>
+<p>JavaScript makes HTML pages more dynamic and interactive. Like this:</p>
+
+<p id="demo" style="border: 2px solid maroon; width: 7cm;"></p>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click to display Date and Time.</button>
+<br>
+
+<p>The HTML 'script> tag is used to define a client-side script (JavaScript).
+The 'script> element either contains script statements, or it points to an external script file through the src attribute.
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+<br>To select an HTML element, JavaScript most often uses the <mark>document.getElementById()</mark> method.</p>
+<h2>The HTML &lt;noscript> Tag:</h2>
+<p>The HTML <mark>noscript</mark> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts.</p>
+<br>
+
+
+<h1 id="12">The Head Element</h1> <div class="custom-line"></div>
+<p>The HTML 'head> element is a container for the following elements: 'title>, 'style>, 'meta>, 'link>, 'script>, and 'base>.</p>
+<p>The head element is a container for metadata (data about data) and is placed between the 'html> tag and the 'body> tag.</p>
+<p>HTML metadata is data about the HTML document. Metadata is not displayed.</p>
+<p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+
+<h2>The HTML 'meta> Element:</h2>
+
+<p>The HTML <meta> Element
+  The 'meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+  <br>The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.
+</p>
+
+<p>Example:<pre>
+  &lt;head>
+  &lt;meta charset="UTF-8">
+  &lt;meta name="description" content="Free Web tutorials">
+  &lt;meta name="keywords" content="HTML, CSS, JavaScript">
+  &lt;meta name="author" content="John Doe">
+  &lt;meta http-equiv="refresh" content="30">   (  *Refresh document every 30 seconds*  )
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">  (  *Setting the viewport to make your website look good on all devices:*  )
+    &lt;/head>
+</pre></p>
+<h2>Setting The Viewport:</h2>
+<p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+  <br>You should include the following meta element in all your web pages:</p>
+<p><pre>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+</pre></p>
+<p>This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+<p>The <mark>width=device-width</mark> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+<br>The <mark>initial-scale=1.0</mark> part sets the initial zoom level when the page is first loaded by the browser.</p>
+<h2>The HTML `base> Element</h2>
+<p>The `base> element specifies the base URL and/or target for all relative URLs in a page.</p>
+<p>The base tag must have either an href or a target attribute present, or both.</p>
+<p>There can only be one single `base> element in a document!</p>
+<br>
+
+
+<h1 id="13">Layout Elements and Techniques</h1> <div class="custom-line"></div>
+
+<h2>HTML Layout Elements:</h2>
+<p>HTML has several semantic elements that define the different parts of a web page:</p>
+
+<ul ><img src="sem_elements.jpg" alt="layout elements" 
+  style="float: left;width: 170px ;height: 210px;padding-right: 25px;">
+
+<li><b>&lt;header></b> - Defines a header for a document or a section</li>
+<li><b>&lt;nav></b> - Defines a set of navigation links</li>
+<li><b>&lt;section></b> - Defines a section in a document</li>
+<li><b>&lt;article></b> - Defines an independent, self-contained content</li>
+<li><b>&lt;aside></b> - Defines content aside from the content (like a sidebar)</li>
+<li><b>&lt;footer></b> - Defines a footer for a document or a sectiont</li>
+<li><b>&lt;details></b> - Defines additional details that the user can open and close on demand</li>
+<li><b>&lt;summary></b> - Defines a heading for the `details> element</li>
+<li> ect...</li>
+</ul>
+
+<br><br>
+
+<p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+
+<p>Examples of <b>non-semantic</b> elements: &lt;div> and &lt;span> - Tells nothing about its content.</p>
+<p>Examples of <b>semantic</b> elements: &lt;form>, &lt;table>, and &lt;article> - Clearly defines its content.</p>
+
+<table class="zebra1" style="width: fit-content; margin-left: 1cm; font-size: large; border-collapse: collapse;">
+  <caption><p class="bold" style="font-size: small;">Below is a list of some of the semantic elements in HTML:</p></caption>
+<tr>
+  <th>Tag</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>article</td>
+  <td>	Defines independent, self-contained content</td>
+</tr>
+<tr>            
+  <td>aside</td>
+  <td>	Defines content aside from the page content</td>
+</tr>
+<tr>
+  <td>details</td>
+  <td>Defines additional details that the user can view or hide</td>
+</tr>
+<tr>
+  <td>figcaption</td>
+  <td>	Defines a caption for a `figure> element</td>
+</tr>
+<tr>
+  <td>figure</td>
+  <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+</tr>
+<tr>
+  <td>footer</td>
+  <td>Defines a footer for a document or section</td>
+</tr>
+<tr>
+  <td>header</td>
+  <td>Specifies a header for a document or section</td>
+</tr>
+<tr>
+  <td>main</td>
+  <td>	Specifies the main content of a document</td>
+</tr>
+<tr>
+  <td>nav</td>
+  <td>	Defines navigation links</td>
+</tr>
+<tr>
+  <td>section</td>
+  <td>Defines a section in a document</td>
+</tr>
+<tr>
+  <td>summary</td>
+  <td>	Defines a visible heading for a `details> elemente</td>
+</tr>
+<tr>
+  <td>time</td>
+  <td>Defines a date/time
+  </td>
+</tr>
+</table>
+<br>
+
+<h2>HTML Layout Techniques:</h2>
+<p>There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:</p>
+
+<ul>
+  <li>CSS framework</li>
+ <li>CSS float property</li>
+ <li>CSS flexbox</li>
+ <li>CSS grid</li>
+</ul>
+<br>
+
+
+<h1 id="14">Responsive Web Design</h1> <div class="custom-line"></div>
+<p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones)</p>
+
+<h2>Setting The Viewport:</h2>
+<p>...</p>
+
+<h2>Responsive Images</h2>
+<p>Responsive images are images that scale nicely to fit any browser size.</p>
+
+<p class="bold">Using the width Property:</p>
+<p>If the CSS width property is set to 100%, the image will be responsive and scale up and down.</p>
+
+<p class="bold">Using the max-width Property:</p>
+<p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size.</p>
+
+<h2>Responsive Text Size</h2>
+<p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
+<p style="font-size: 2vw;">[ the text size will follow the size of the browser window ]</p>
+
+<h2>Media Queries:</h2>
+<p>In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+<p>With media queries you can define completely different styles for different browser sizes.</p>
+<p>Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stack vertically on small screens:</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+<br /><br /><br/><br><br>
+
+<footer style="text-align: center; border: 2px; background-color: silver;">
+<p style="margin-top: 3cm;">*Validate HTML With The W3C Validator</p>
+<p style="font-size: medium;"><b>  Put your web address in the box below:</b><br/>
+<a href="https://www.w3schools.com/html/html_validate.html" target="_blank">https://www.w3schools.com/html/html_validate.html</a>
+<br />
+</p>
+
+</footer>
+</body>
+</html>
